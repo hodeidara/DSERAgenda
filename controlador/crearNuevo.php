@@ -3,7 +3,7 @@
     require_once("../modelo/Usuario.php");
     $crear = new Usuario();
     $crear->crearUsuario();
-    header("Location: ../controlador/vistaLogin.php");
+    header("Location: ../vista/vistaLogin.php");
     
     
     

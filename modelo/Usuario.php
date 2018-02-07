@@ -20,11 +20,13 @@ class Usuario {
             while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
                 $passEncriptada=$row['pass'];
                 echo $passEncriptada;
+                echo $password;
             }
             if (password_verify($password, $passEncriptada)) {
                     $_SESSION['Logueado'] = $user;
                     return true;
                 } else {
+                    echo "false";
                     return false;
                 }
     }
