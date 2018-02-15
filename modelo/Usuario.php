@@ -39,5 +39,10 @@ class Usuario {
             $sql = "insert into usuarios (user, pass, esAdmin) values ('$user', '$contrasenaEncriptada', 1)";
             mysqli_query($this->link, $sql);
     }
+    
+    public function crearContacto($nombre, $apellido, $telefono, $pueblo) {
+            $sql = "insert into contactos (nombre, apellido, telefono, poblacion) values ('$nombre', '$apellido', '$telefono', '$pueblo')";
+            mysqli_query($this->link, $sql);
+    }
 
 }

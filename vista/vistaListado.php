@@ -7,7 +7,15 @@
         <link href="../css/estilos.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <a href="../vista/vistaLogin.php" >Volver</a> <a href="../controlador/controladorListarGrupos.php" >Listar Grupos</a><br><br>
+        <a href="../vista/vistaLogin.php" >Volver</a> <a href="../controlador/controladorListarGrupos.php" >Listar Grupos</a>
+        <?php
+            if (isset($_SESSION['Logueado'])) {
+                echo '<p>Hola, ' . $_SESSION['Logueado'] . '</p>';
+            } else {
+                echo '<p>No estás logueado</p>';
+            }
+            ?>
+        <br><br>
         <div class="container">
             <h1>Agenda</h1> 
             <div id="admin">

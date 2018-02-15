@@ -27,7 +27,10 @@
             <form action="../controlador/crearNuevo.php" method="POST">
                 <input type="submit" name="btnCrear" value="Crear nuevo usuario predefinido" />
             </form>
-
+            
+            <form action="../controlador/crearEnMasa.php" method="POST">
+                <input type="submit" name="btnCrear" value="Crear desde fichero" />
+            </form>
 
             <form action="../controlador/cerrarSesion.php" method="POST">
                 <input type="submit" name="btn_amaitu" value="Cerrar sesión activa" />
